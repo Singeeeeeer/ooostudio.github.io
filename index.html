@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script>document.documentElement.classList.add('js')</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="未命名工作室的官方网站——游戏作品、团队与开发动态。当前项目：《深空接收机》。"
+    />
+    <meta name="theme-color" content="#0b0c0e" />
+    <title>深空接收机</title>
+    <link rel="icon" href="assets/signal-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../shared/foundation.css" />
+    <link rel="stylesheet" href="../shared/member-profile.css" />
+    <link rel="stylesheet" href="edition.css" />
+  </head>
+  <body class="edition-onepage-receiver">
+    <div class="boot-screen" aria-hidden="true">
+      <div class="boot-screen__readout">
+        <span>DSR / PUBLIC UPLINK</span>
+        <span class="boot-screen__count">000</span>
+      </div>
+      <div class="boot-screen__track"><i></i></div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16"></circle>
+          <path d="M7 22c7-9 19-9 26 0M12 27c5-5 11-5 16 0"></path>
+          <circle cx="20" cy="20" r="2.5"></circle>
+        </svg>
+        <span>
+          <b class="zh">未命名工作室 <em>/ 暂用名</em></b><b class="en">STUDIO NAME <em>/ TBA</em></b>
+          <small>INDEPENDENT GAME STUDIO</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#studio"><span>01</span><i class="zh">我们</i><i class="en">STUDIO</i></a>
+        <a href="#project"><span>02</span><i class="zh">项目</i><i class="en">PROJECT</i></a>
+        <a href="#media"><span>03</span><i class="zh">资料</i><i class="en">MEDIA</i></a>
+        <a href="#crew"><span>04</span><i class="zh">成员</i><i class="en">CREW</i></a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="status-lamps" aria-label="接收状态">
+          <i class="lamp lamp--amber"></i><i class="lamp lamp--green"></i><i class="lamp lamp--red"></i>
+        </div>
+        <button class="tool-button language-toggle" type="button" aria-label="切换语言">中 / EN</button>
+        <button class="tool-button display-toggle" type="button" aria-label="关闭扫描线">CRT: ON</button>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+          <i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__image" role="img" aria-label="Alpha 行星环境的早期视觉开发概念图"></div>
+        <div class="hero__shade"></div>
+        <div class="scanlines" aria-hidden="true"></div>
+
+        <div class="hero__telemetry telemetry--top" aria-hidden="true">
+          <span>PUBLIC CHANNEL / 001</span>
+          <span>RX 03.880 GHz</span>
+          <span>LOCK <b>98.4%</b></span>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">
+            <i></i>
+            <span class="zh">工作室首个项目 / ALPHA 章节制作中</span>
+            <span class="en">OUR FIRST PROJECT / ALPHA CHAPTER IN PRODUCTION</span>
+          </p>
+          <h1 id="hero-title">
+            <span>DEEP SPACE</span>
+            <strong>RECEIVER</strong>
+          </h1>
+          <div class="hero__intro">
+            <p class="zh">在桌面一角等待远方来信。七天、三十次接收，以及一场偏离计划的星际寻宝。</p>
+            <p class="en">Wait for a signal at the edge of your desktop: seven days, thirty dispatches, and a treasure hunt gone off course.</p>
+            <div class="hero__actions">
+              <a class="machine-button machine-button--primary" href="#project">
+                <span class="zh">进入接收站</span><span class="en">ENTER STATION</span><i>↘</i>
+              </a>
+              <a class="machine-button" href="#studio">
+                <span class="zh">认识制作组</span><span class="en">MEET THE STUDIO</span><i>→</i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="frequency" aria-hidden="true">
+            <span>FREQUENCY</span>
+            <div class="frequency__line">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <b></b>
+            </div>
+            <em>03.880 GHZ</em>
+          </div>
+          <div class="hero__coordinates">
+            <span>CURSOR / AZ <b data-az>028.0</b></span>
+            <span>EL <b data-el>-06.0</b></span>
+          </div>
+          <a class="scroll-cue" href="#studio"><span>SCROLL TO STUDIO</span><i>↓</i></a>
+        </div>
+      </section>
+
+      <section class="studio section studio--first" id="studio">
+        <div class="studio-intro reveal">
+          <p class="section-code">01 / ABOUT THE STUDIO</p>
+          <h2 class="zh">我们制作关于<br />距离、痕迹与想象的游戏。</h2>
+          <h2 class="en">WE MAKE GAMES ABOUT<br />DISTANCE, TRACES AND IMAGINATION.</h2>
+        </div>
+
+        <div class="studio-grid">
+          <div class="studio-manifesto reveal">
+            <p class="zh">未命名工作室（暂用名）是一支专注于叙事体验与独特交互的独立游戏团队。我们希望让玩法、界面、声音与世界观彼此咬合，让玩家通过自己的操作发现故事，而不只是阅读故事。</p>
+            <p class="en">STUDIO NAME (TBA) IS AN INDEPENDENT TEAM FOCUSED ON NARRATIVE EXPERIENCES AND DISTINCT INTERACTION. WE BUILD GAMES WHERE PLAY, INTERFACE, SOUND AND WORLD-BUILDING WORK AS ONE—STORIES DISCOVERED THROUGH ACTION, NOT SIMPLY READ.</p>
+            <a href="#crew"><span class="zh">查看制作成员</span><span class="en">MEET THE CREW</span><i>→</i></a>
+          </div>
+          <div class="studio-stats reveal">
+            <div><strong data-count="5">00</strong><span class="zh">初创成员</span><span class="en">FOUNDING MEMBERS</span></div>
+            <div><strong data-count="1">00</strong><span class="zh">在研作品</span><span class="en">ACTIVE PROJECT</span></div>
+            <div><strong data-count="30">00</strong><span class="zh">已接收信号</span><span class="en">SIGNALS RECEIVED</span></div>
+            <div><strong>∞</strong><span class="zh">仍待探索</span><span class="en">LEFT TO DISCOVER</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project section" id="project">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-code">02 / CURRENT PROJECT</p>
+            <h2><span class="zh">正在接收</span><span class="en">NOW RECEIVING</span></h2>
+          </div>
+          <p class="section-index">PROJECT 001 / IN DEVELOPMENT</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-copy reveal">
+            <p class="signal-label"><i></i>PROJECT 001 / CURRENT / IN DEVELOPMENT</p>
+            <h3>深空接收机</h3>
+            <p class="project-title-en">DEEP SPACE RECEIVER</p>
+            <p class="project-lede zh">《深空接收机》是一件驻留在桌面一角的叙事物件。远方的 Traveller 会在真实时间里，把一次偏离计划的星际寻宝逐条发送回来。</p>
+            <p class="project-lede en">Deep Space Receiver is a narrative object that lives at the edge of your desktop. Across real time, Traveller sends back a treasure hunt that has gone off course.</p>
+            <dl class="project-meta">
+              <div><dt>GENRE</dt><dd class="zh">桌面常驻叙事体验</dd><dd class="en">AMBIENT DESKTOP NARRATIVE</dd></div>
+              <div><dt>PLATFORM</dt><dd>DESKTOP</dd></div>
+              <div><dt>STATE</dt><dd class="state-live"><i></i>ALPHA CHAPTER IN PRODUCTION</dd></div>
+              <div><dt>FORMAT</dt><dd>7 REAL-TIME DAYS / 30 DISPATCHES</dd></div>
+            </dl>
+          </article>
+
+          <div class="concept-terminal reveal">
+            <div class="terminal-chassis">
+              <div class="terminal-screen" role="img" aria-label="Alpha 环境视觉开发概念图显示在深空接收机屏幕中">
+                <div class="terminal-screen__image"></div>
+                <div class="scanlines" aria-hidden="true"></div>
+                <p><span>CONCEPT FRAME / 0001</span><b>IMAGE RECEIVED</b></p>
+                <button class="concept-expand" type="button" aria-label="全屏查看概念图 / Open concept art">↗</button>
+              </div>
+              <div class="receiver-readout" aria-hidden="true"><span>IMAGE<br />RECEIVED</span><i>RX / 98.4%</i></div>
+            </div>
+            <p class="concept-caption"><span>VISUAL DEVELOPMENT / ALPHA ENVIRONMENT STUDY</span><b>01—04</b></p>
+          </div>
+        </div>
+
+        <div class="project-status-strip reveal" aria-label="项目制作状态">
+          <span><i></i>PROJECT 001 / ACTIVE</span>
+          <span class="zh">当前唯一公开项目</span><span class="en">OUR ONLY ANNOUNCED PROJECT</span>
+          <b>BUILD STATUS / IN DEVELOPMENT</b>
+        </div>
+      </section>
+
+      <section class="play section project-brief" id="brief">
+        <div class="section-heading section-heading--light reveal">
+          <div>
+            <p class="section-code">03 / PROJECT BRIEF</p>
+            <h2><span class="zh">深空接收机</span><span class="en">DEEP SPACE RECEIVER</span></h2>
+          </div>
+          <p class="section-note zh">首个公开项目 / 目前开发中</p>
+          <p class="section-note en">DEBUT TITLE / CURRENTLY IN DEVELOPMENT</p>
+        </div>
+
+        <div class="brief-layout">
+          <article class="brief-statement reveal">
+            <p class="signal-label"><i></i>AMBIENT DESKTOP NARRATIVE / REAL-TIME DELIVERY</p>
+            <h3 class="zh">一台安静常驻的接收机，把遥远旅程带到桌面一角。</h3>
+            <h3 class="en">A quiet receiver brings a distant journey to the edge of your desktop.</h3>
+            <p class="zh">你无法替 Traveller 选择路线，只能等待、接收，并从三十份分散抵达的记录中，拼出一次偏离计划的寻宝行动。低亮度与低打扰的常驻设计，让远方的行动空白也成为叙事的一部分。</p>
+            <p class="en">You cannot choose Traveller's route; you can only wait, receive, and reconstruct a derailed treasure hunt from thirty dispatches. Its quiet, low-interruption presence makes the time between messages part of the story.</p>
+            <div class="brief-world">
+              <span>WORLD / ALPHA</span>
+              <p class="zh">Alpha 曾自然宜居，却因长期工业污染、第一次灰雨与持续气候恶化而被全面撤离。数个世纪后，一张残缺藏宝图将 Traveller 引向 C-3 走廊下的密封货运节点；一次酸雨迫降，使 The Spine 的巨型残存桥墩成为重新辨认消失道路的唯一线索。</p>
+              <p class="en">Alpha was once naturally habitable, until industrial pollution, the first Grey Rain and a worsening climate forced a full evacuation. Centuries later, a fragmentary treasure map leads Traveller toward a sealed freight node beneath C-3—until an acid-rain crash landing turns the surviving piers of The Spine into the only line through a vanished road.</p>
+            </div>
+          </article>
+          <dl class="brief-facts reveal">
+            <div><dt>TYPE / 类型</dt><dd class="zh">桌面常驻叙事体验</dd><dd class="en">AMBIENT DESKTOP NARRATIVE</dd></div>
+            <div><dt>EXPERIENCE / 体验</dt><dd class="zh">等待 → 接收 → 查看 → 归档</dd><dd class="en">WAIT → RECEIVE → INSPECT → ARCHIVE</dd></div>
+            <div><dt>CHAPTER / 章节</dt><dd>ALPHA / 7 REAL-TIME DAYS</dd></div>
+            <div><dt>FORMAT / 形式</dt><dd>30 INDEPENDENT DISPATCHES</dd></div>
+            <div><dt>STATUS / 状态</dt><dd class="state-live"><i></i>IN DEVELOPMENT / RELEASE TBA</dd></div>
+            <div><dt>PLATFORM / 平台</dt><dd>DESKTOP</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="archive section" id="media">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-code">04 / PROMOTIONAL MATERIALS</p>
+            <h2><span class="zh">宣发资料</span><span class="en">MEDIA ARCHIVE</span></h2>
+          </div>
+          <p class="section-note zh">概念设定、影像与对外物料将在这里持续归档。</p>
+          <p class="section-note en">CONCEPTS, FILMS AND PRESS MATERIALS WILL BE ARCHIVED HERE.</p>
+        </div>
+
+        <div class="archive-grid promo-grid">
+          <article class="archive-card archive-card--image reveal">
+            <div class="archive-card__visual"><span>GALLERY / 001</span><i></i></div>
+            <div class="archive-card__copy"><span>ALPHA / PALE BASIN / C-3</span><h3 class="zh">设定概念图集</h3><h3 class="en">CONCEPT ART</h3><p class="zh">收录 Alpha 的酸雨、盐化荒原、C-3 走廊与 The Spine 巨型桥墩，以及 DSR-03A 接收终端的界面与工业设计。</p><p class="en">Acid rain, salt flats, the C-3 corridor, the surviving piers of The Spine, and the industrial interface of the DSR-03A receiver.</p></div>
+            <button class="gallery-trigger" type="button" aria-haspopup="dialog" aria-label="打开设定概念图集 / Open concept art gallery"></button>
+          </article>
+          <article class="archive-card archive-card--motion reveal">
+            <div class="archive-card__visual"><span>TRAILER / 001</span><i></i></div>
+            <div class="archive-card__copy"><span>IN PRODUCTION / COMING LATER</span><h3 class="zh">首个信号 · 氛围短片</h3><h3 class="en">FIRST SIGNAL / TEASER</h3><p class="zh">以登陆器下降、第一份通讯与接收机唤醒为线索的氛围短片席位。</p><p class="en">A future atmospheric teaser built from the lander descent, the first dispatch and the receiver wake sequence.</p></div>
+          </article>
+          <article class="archive-card archive-card--model reveal">
+            <div class="archive-card__visual"><span>PRESS / KIT</span><i></i></div>
+            <div class="archive-card__copy"><span>PREPARING / NOT YET DOWNLOADABLE</span><h3 class="zh">媒体与品牌物料</h3><h3 class="en">PRESS MATERIALS</h3><p class="zh">为主视觉、Logo、UI 截图、项目资料表与媒体联络预留的资料包入口。</p><p class="en">A reserved press-kit entry for key art, logos, UI stills, project facts and media contacts.</p></div>
+          </article>
+        </div>
+
+        <div class="archive-ticker" aria-hidden="true">
+          <div><span>ALPHA / PALE BASIN</span><span>C-3 / THE SPINE</span><span>DSR-03A / INTERFACE</span><span>FIRST SIGNAL / IN PRODUCTION</span><span>PRESS KIT / PREPARING</span><span>ALPHA / PALE BASIN</span></div>
+        </div>
+      </section>
+
+      <section class="crew section" id="crew">
+        <div class="section-heading section-heading--light reveal">
+          <div>
+            <p class="section-code">05 / RECEIVER CREW</p>
+            <h2><span class="zh">保持监听</span><span class="en">KEEP LISTENING</span></h2>
+          </div>
+          <p class="section-note zh">五位初创成员。点击卡片查看简介与联系信息。</p>
+          <p class="section-note en">FIVE FOUNDING MEMBERS. OPEN A CARD FOR PROFILE AND CONTACT.</p>
+        </div>
+
+        <div class="crew-grid">
+          <article class="crew-card reveal"><span>FOUNDING MEMBER / 01</span><div class="crew-avatar"><img src="assets/member-01-jorben.png" alt="Jorben Guo" width="1254" height="1254" loading="lazy" /></div><h3 class="zh">Jorben Guo</h3><h3 class="en">Jorben Guo</h3><p class="zh">联合创始人兼创意总监</p><p class="en">CO-FOUNDER &amp; CREATIVE DIRECTOR</p><i><span class="zh">查看资料</span><span class="en">VIEW PROFILE</span> ↗</i><button class="member-trigger" type="button" data-member="01" aria-haspopup="dialog" aria-label="查看 Jorben Guo 简介 / View Jorben Guo profile"></button></article>
+          <article class="crew-card reveal"><span>FOUNDING MEMBER / 02</span><div class="crew-avatar"><img src="assets/member-02-singer.png" alt="Singer" width="1254" height="1254" loading="lazy" /></div><h3 class="zh">Singer</h3><h3 class="en">Singer</h3><p class="zh">联合创始人兼技术总监</p><p class="en">CO-FOUNDER &amp; TECHNICAL DIRECTOR</p><i><span class="zh">查看资料</span><span class="en">VIEW PROFILE</span> ↗</i><button class="member-trigger" type="button" data-member="02" aria-haspopup="dialog" aria-label="查看 Singer 简介 / View Singer profile"></button></article>
+          <article class="crew-card reveal"><span>FOUNDING MEMBER / 03</span><div class="crew-avatar"><img src="assets/member-03-edward.png" alt="Edward Liu" width="1254" height="1254" loading="lazy" /></div><h3 class="zh">Edward Liu（Liu Jiayi）</h3><h3 class="en">Edward Liu (Liu Jiayi)</h3><p class="zh">技术美术</p><p class="en">TECHNICAL ARTIST</p><i><span class="zh">查看资料</span><span class="en">VIEW PROFILE</span> ↗</i><button class="member-trigger" type="button" data-member="03" aria-haspopup="dialog" aria-label="查看 Edward Liu 简介 / View Edward Liu profile"></button></article>
+          <article class="crew-card reveal"><span>FOUNDING MEMBER / 04</span><div class="crew-avatar"><img src="assets/member-04-momo.png" alt="Momo" width="1254" height="1254" loading="lazy" /></div><h3 class="zh">Momo（Mo Yang）</h3><h3 class="en">Momo (Mo Yang)</h3><p class="zh">产品策划与 AIGC 创作者</p><p class="en">PRODUCT PLANNER &amp; AIGC CREATOR</p><i><span class="zh">查看资料</span><span class="en">VIEW PROFILE</span> ↗</i><button class="member-trigger" type="button" data-member="04" aria-haspopup="dialog" aria-label="查看 Momo 简介 / View Momo profile"></button></article>
+          <article class="crew-card reveal"><span>FOUNDING MEMBER / 05</span><div class="crew-avatar"><img src="assets/member-05-siyu.png" alt="Siyu" width="1254" height="1254" loading="lazy" /></div><h3 class="zh">Siyu</h3><h3 class="en">Siyu</h3><p class="zh">Web AR 体验设计师与开发者</p><p class="en">WEB AR EXPERIENCE DESIGNER &amp; DEVELOPER</p><i><span class="zh">查看资料</span><span class="en">VIEW PROFILE</span> ↗</i><button class="member-trigger" type="button" data-member="05" aria-haspopup="dialog" aria-label="查看 Siyu 简介 / View Siyu profile"></button></article>
+        </div>
+      </section>
+
+      <section class="contact section">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="section-code">06 / OPEN FREQUENCY</p>
+            <h2 class="zh">想和我们说些什么？</h2>
+            <h2 class="en">HAVE SOMETHING TO TRANSMIT?</h2>
+          </div>
+          <a class="contact-button" href="mailto:studio@example.com"><span>studio@example.com</span><i>↗</i></a>
+          <div class="contact-meta"><span>PRESS / BUSINESS / CAREERS</span><span>REPLY WINDOW: 3—5 DAYS</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#top">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16"></circle><path d="M7 22c7-9 19-9 26 0M12 27c5-5 11-5 16 0"></path><circle cx="20" cy="20" r="2.5"></circle></svg>
+        <span><b class="zh">未命名工作室 <em>/ 暂用名</em></b><b class="en">STUDIO NAME <em>/ TBA</em></b><small>INDEPENDENT GAME STUDIO</small></span>
+      </a>
+      <div class="footer-links"><a href="#studio">STUDIO</a><a href="#project">PROJECT</a><a href="#media">MEDIA</a><a href="#crew">CREW</a><a href="mailto:studio@example.com">CONTACT</a></div>
+      <div class="footer-status"><span><i></i>PUBLIC STUDIO CHANNEL ONLINE</span><b>© 2026 未命名工作室（暂用名）</b></div>
+    </footer>
+
+    <dialog class="concept-modal" aria-labelledby="concept-modal-caption">
+      <button type="button" aria-label="关闭概念图 / Close concept art">CLOSE / ESC</button>
+      <img src="assets/record.png" alt="Alpha 环境的早期视觉开发概念图" />
+      <p id="concept-modal-caption">VISUAL DEVELOPMENT / ALPHA ENVIRONMENT STUDY / FRAME 0001</p>
+    </dialog>
+
+    <dialog class="gallery-modal" aria-labelledby="gallery-modal-title">
+      <div class="gallery-modal__shell">
+        <header class="gallery-modal__header">
+          <div>
+            <span>GALLERY / 001</span>
+            <h2 id="gallery-modal-title"><span class="zh">设定概念图集</span><span class="en">CONCEPT ART</span></h2>
+          </div>
+          <button class="gallery-close" type="button" aria-label="关闭图集 / Close gallery">CLOSE / ESC</button>
+        </header>
+        <div class="gallery-modal__stage">
+          <button class="gallery-nav gallery-nav--prev" type="button" aria-label="上一张 / Previous image">←</button>
+          <figure>
+            <img class="gallery-main-image" alt="" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <button class="gallery-nav gallery-nav--next" type="button" aria-label="下一张 / Next image">→</button>
+        </div>
+        <footer class="gallery-modal__footer">
+          <span class="gallery-counter" aria-live="polite"></span>
+          <div class="gallery-thumbnails" aria-label="图集缩略图 / Gallery thumbnails"></div>
+        </footer>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+    <script src="../shared/iteration.js"></script>
+    <script src="member-profile.js"></script>
+  </body>
+</html>
