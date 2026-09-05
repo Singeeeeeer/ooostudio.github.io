@@ -251,10 +251,12 @@ body.display-clean .scanlines { display: none; }
 .motion-status small { color: rgba(222,217,207,.5); font: 7px/1 var(--mono); letter-spacing: .16em; text-shadow: none; }
 .archive-card--news .archive-card__visual img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.72) contrast(1.04); transition: transform .45s ease, filter .45s ease; }
 .archive-card--news:hover .archive-card__visual img { transform: scale(1.035); filter: saturate(.9) contrast(1.02); }
-.archive-card__copy { padding: 24px; }
+.archive-card__copy { flex: 1; padding: 24px; }
 .archive-card__copy > span { color: var(--orange); font: 8px/1 var(--mono); letter-spacing: .14em; }
 .archive-card__copy h3 { margin: 18px 0 12px; font-size: 28px; }
 .archive-card__copy p { margin: 0; color: rgba(10,11,13,.62); font-size: 13px; line-height: 1.75; }
+body.lang-en .archive-card__copy > h3.en,
+body.lang-en .archive-card__copy > p.en { display: block !important; }
 .archive-ticker { margin: 100px calc(var(--page-pad) * -1) 0; overflow: hidden; color: var(--bone); background: var(--orange); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .archive-ticker div { width: max-content; display: flex; animation: marquee 25s linear infinite; }
 .archive-ticker span { position: relative; padding: 14px 45px; font: 9px/1 var(--mono); letter-spacing: .12em; }
