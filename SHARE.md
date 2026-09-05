@@ -37,7 +37,6 @@ python -m http.server 4174 --bind 0.0.0.0
 
 ## 发布前记得替换
 
-- “未命名工作室（暂用名）”
 - 成员姓名和职务
 - `studio@example.com`
 - 最终项目介绍、平台与开发状态

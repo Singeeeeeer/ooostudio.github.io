@@ -200,3 +200,10 @@ galleryModal.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowLeft') renderGalleryImage(galleryIndex - 1);
   if (event.key === 'ArrowRight') renderGalleryImage(galleryIndex + 1);
 });
+
+const newsModal = document.querySelector('.news-modal');
+document.querySelector('.news-trigger').addEventListener('click', () => newsModal.showModal());
+newsModal.querySelector('.news-close').addEventListener('click', () => newsModal.close());
+newsModal.addEventListener('click', (event) => {
+  if (event.target === newsModal) newsModal.close();
+});
