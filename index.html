@@ -230,18 +230,19 @@
             <button class="gallery-trigger" type="button" aria-haspopup="dialog" aria-label="打开设定概念图集 / Open concept art gallery"></button>
           </article>
           <article class="archive-card archive-card--news reveal">
-            <div class="archive-card__visual"><span>NEWS / 001</span><img src="assets/news/1.jpg" alt="OOO Studio 团队在 SheNicest 黑客松现场合影" loading="lazy" decoding="async" /></div>
+            <div class="archive-card__visual"><span>NEWS / 001</span><img src="assets/news/001.jpg" alt="OOO Studio 团队在 SheNicest 黑客松现场合影" loading="lazy" decoding="async" /></div>
             <div class="archive-card__copy"><span>2026.08.30 / FIRST PRIZE</span><h3 class="zh">最新动态</h3><h3 class="en">LATEST NEWS</h3><p class="zh">OOO Studio《深空接收机》获SheNicest千人黑客松游戏赛道一等奖。</p><p class="en">OOO Studio’s Deep Space Receiver wins First Prize in the Game Development Track at the SheNicest Hackathon.</p></div>
             <button class="news-trigger" type="button" aria-haspopup="dialog" aria-label="阅读最新动态 / Read latest news"></button>
           </article>
           <article class="archive-card archive-card--motion reveal">
-            <div class="archive-card__visual"><span>TRAILER / 001</span><i></i><strong class="motion-status"><span class="zh">制作中</span><span class="en">IN PRODUCTION</span><small>COMING LATER</small></strong></div>
-            <div class="archive-card__copy"><span>IN PRODUCTION / COMING LATER</span><h3 class="zh">首个信号 · 氛围短片</h3><h3 class="en">FIRST SIGNAL / TEASER</h3><p class="zh">第一段来自深空的影像正在校准：登陆器下降、通讯抵达、接收机在黑暗中苏醒。信号完成后将在这里公开。</p><p class="en">The first transmission is being calibrated: a descending lander, an incoming dispatch, and a receiver waking in the dark. The signal will be released here when ready.</p></div>
+            <div class="archive-card__visual"><span>TRAILER / 001</span><img src="https://i.ytimg.com/vi/xv2bkfbCyEE/hqdefault.jpg" alt="《深空接收机》演示视频封面" loading="lazy" decoding="async" /><i></i><strong class="motion-status"><span class="zh">立即播放</span><span class="en">PLAY VIDEO</span><small>YOUTUBE / 16:9</small></strong></div>
+            <div class="archive-card__copy"><span>AVAILABLE NOW / WATCH</span><h3 class="zh">《深空接收机》演示视频</h3><h3 class="en">DEEP SPACE RECEIVER / DEMO</h3><p class="zh">观看《深空接收机》演示视频，了解桌面接收、信号查看与深空探索体验。</p><p class="en">Watch the Deep Space Receiver demo and discover its desktop transmissions, signal archive, and deep-space experience.</p></div>
+            <button class="trailer-trigger" type="button" aria-haspopup="dialog" aria-label="播放《深空接收机》演示视频 / Play Deep Space Receiver demo"></button>
           </article>
         </div>
 
         <div class="archive-ticker" aria-hidden="true">
-          <div><span>ALPHA / PALE BASIN</span><span>C-3 / THE SPINE</span><span>DSR-03A / INTERFACE</span><span>LATEST NEWS / FIRST PRIZE</span><span>FIRST SIGNAL / IN PRODUCTION</span><span>ALPHA / PALE BASIN</span></div>
+          <div><span>ALPHA / PALE BASIN</span><span>C-3 / THE SPINE</span><span>DSR-03A / INTERFACE</span><span>LATEST NEWS / FIRST PRIZE</span><span>TRAILER / WATCH NOW</span><span>ALPHA / PALE BASIN</span></div>
         </div>
       </section>
 
@@ -327,6 +328,27 @@
       </div>
     </dialog>
 
+    <dialog class="trailer-modal" aria-labelledby="trailer-modal-title">
+      <div class="trailer-modal__shell">
+        <header class="trailer-modal__header">
+          <div>
+            <span>TRAILER / 001</span>
+            <h2 id="trailer-modal-title"><span class="zh">《深空接收机》演示视频</span><span class="en">DEEP SPACE RECEIVER / DEMO</span></h2>
+          </div>
+          <button class="trailer-close" type="button" aria-label="关闭演示视频 / Close demo video">CLOSE / ESC</button>
+        </header>
+        <div class="trailer-modal__player">
+          <iframe
+            title="《深空接收机》演示视频 / Deep Space Receiver demo"
+            data-src="https://www.youtube-nocookie.com/embed/xv2bkfbCyEE"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </dialog>
+
     <dialog class="news-modal" aria-labelledby="news-modal-label">
       <article class="news-modal__shell">
         <header class="news-modal__header">
@@ -338,7 +360,7 @@
         </header>
         <div class="news-modal__scroll">
           <figure class="news-hero">
-            <img src="assets/news/1.jpg" alt="OOO Studio 团队在 SheNicest 黑客松现场合影" loading="lazy" decoding="async" />
+            <img src="assets/news/001.jpg" alt="OOO Studio 团队在 SheNicest 黑客松现场合影" loading="lazy" decoding="async" />
           </figure>
 
           <div class="news-article__body">
